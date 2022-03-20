@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing:border-box;
+    outline: 0;
+}
+body{
+    background-image: url("/img/cookies.jpg";
+    background-color: burlywood;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h1{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(6, 78, 60);
+    text-align: center;
+    padding: 10px;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* nav section css start*/
+nav{
+    background-color: brown;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 25px;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: all .4s linear;
+
+}
+nav ul li:hover > a{
+    background-color: rgb(3, 70, 28);
+    
+}
+nav ul li ul{
+    position: absolute;
+    left:0;
+    top:120%;
+    background-color: rebeccapurple;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear;
+  
+}
+nav ul li:hover > ul{
+    top:100%;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+}    
+nav ul li ul li:hover ul{
+    top: 0;
+}
+/*nav section css end*/
